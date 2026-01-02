@@ -31,7 +31,7 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               <img
                 className="h-10 w-10"
-                src="/Logo.png"
+                src="/logo.png"
                 alt="WeaveAI"
               />
               <span className="text-2xl font-bold text-white">

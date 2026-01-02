@@ -37,7 +37,7 @@ export default function Comparison() {
                 <th className="py-4 px-6 text-left text-sm font-semibold text-slate-900">Feature</th>
                 <th className="py-4 px-6 text-center">
                   <div className="flex flex-col items-center">
-                    <img src="/Logo.png" alt="WeaveAI" className="h-8 w-8 mb-2" />
+                    <img src="/logo.png" alt="WeaveAI" className="h-8 w-8 mb-2" />
                     <span className="text-sm font-semibold text-primary-600">WeaveAI</span>
                   </div>
                 </th>
