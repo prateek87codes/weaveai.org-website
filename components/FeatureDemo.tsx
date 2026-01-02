@@ -51,7 +51,7 @@ export default function FeatureDemo() {
               <h3 className="font-semibold text-lg text-slate-900">AI understands it</h3>
             </div>
             <div className="bg-gradient-to-r from-primary-600 to-primary-700 rounded-t-lg p-4 text-white font-semibold flex items-center gap-2">
-              <img src="/logo.png" alt="WeaveAI" className="h-6 w-6" />
+              <img src="/Logo.png" alt="WeaveAI" className="h-6 w-6" />
               WeaveAI Chat
             </div>
             <div className="border-2 border-primary-200 rounded-b-lg p-6 bg-white space-y-4">

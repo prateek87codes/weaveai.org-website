@@ -11,6 +11,21 @@ export const metadata: Metadata = {
   description: "Transform how you browse the web. Chat with any webpage, PDF, or YouTube video using GPT-4, Claude, and Gemini. Extract insights from 500-page documents instantly.",
   keywords: "AI, Chrome Extension, ChatGPT, PDF reader, YouTube transcripts, web scraping, AI assistant",
   authors: [{ name: "WeaveAI" }],
+  icons: {
+    icon: [
+      { url: "/favicon_io/favicon.ico" },
+      { url: "/favicon_io/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon_io/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: [
+      { url: "/favicon_io/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+    other: [
+      { url: "/favicon_io/android-chrome-192x192.png", sizes: "192x192", type: "image/png" },
+      { url: "/favicon_io/android-chrome-512x512.png", sizes: "512x512", type: "image/png" },
+    ],
+  },
+  manifest: "/favicon_io/site.webmanifest",
   openGraph: {
     title: "WeaveAI - Chat with Any Webpage Using AI",
     description: "Transform how you browse the web. Chat with any webpage, PDF, or YouTube video using AI.",

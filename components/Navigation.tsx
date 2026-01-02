@@ -23,7 +23,7 @@ export default function Navigation() {
             <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-3">
               <img
                 className="h-10 w-10"
-                src="/logo.png"
+                src="/Logo.png"
                 alt="WeaveAI"
               />
               <span className="text-2xl font-bold text-slate-900">
