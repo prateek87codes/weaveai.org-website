@@ -23,7 +23,7 @@ export default function CTA() {
             <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
           </Link>
           <Link
-            href="/pricing"
+            href="/#pricing"
             className="text-lg font-semibold leading-6 text-white flex items-center gap-2 hover:text-primary-100 transition-colors px-8 py-4"
           >
             View pricing <ArrowRight className="h-5 w-5" />

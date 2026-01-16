@@ -4,7 +4,7 @@ export default function Comparison() {
   const scenarios = [
     {
       feature: "Browser Experience",
-      chatbots: "❌ Requires copy-paste. No browser integration. You manually transfer content to a separate chat window.",
+      chatbots: "🚨 Requires copy-paste. No browser integration. You manually transfer content to a separate chat window.",
       extensions: "🚨 Intrusive. Floating icons, popups on text selection, and injected buttons inside your favorite websites.",
       weaveai: "✅ Zero Clutter. Stays completely hidden in the sidebar until you need it. We never alter websites or inject buttons."
     },
@@ -24,7 +24,7 @@ export default function Comparison() {
       feature: "AI Models",
       chatbots: "🔒 Paywalled. GPT-4 and Claude locked behind $20/month subscriptions. Limited free tier.",
       extensions: "🔒 Paywalled. Often lock GPT-4 or Claude behind $20/month subscriptions.",
-      weaveai: "✅ Open & Flexible. Includes Gemini Flash for free. Support BYOK (Bring Your Own Key) to use GPT-4o or Claude at cost price."
+      weaveai: "✅ Open & Flexible. Basic plans starting as low as $4.99/month with Gemini Flash Included for free. Get unlimited prompts with BYOK option."
     }
   ];
 
@@ -78,7 +78,7 @@ export default function Comparison() {
 
         <div className="mt-12 max-w-4xl mx-auto">
           <p className="text-lg text-slate-700 leading-relaxed text-center">
-            Most AI extensions act like annoying salespeople—interrupting you with popups and buttons on every page. WeaveAI is your quiet research partner. We wait in the sidebar. We only read what you tell us to read. And unlike basic summarizers, we don't just shorten text—we connect ideas across your entire browser.
+            Most AI extensions act like annoying salespeople—interrupting you with popups and buttons on every page. WeaveAI is your quiet research partner. We wait in the sidebar. We only read what you tell us to read. And unlike basic summarizers, we don't just shorten text—we connect ideas across your browser.
           </p>
         </div>
 

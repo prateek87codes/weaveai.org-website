@@ -1,4 +1,4 @@
-import { FileText, Youtube, Globe, Zap, Lock, Layers, Brain, Download, Check, File, Newspaper, BookOpen, Wrench, GraduationCap, Briefcase, Pencil, Book, Search, Scale, Hospital, ShoppingCart } from "lucide-react";
+import { FileText, Youtube, Globe, Zap, Lock, Layers, Brain, Download, Check, File, Newspaper, BookOpen, Wrench, GraduationCap, Briefcase, Pencil, Book, Search, Scale, Hospital, ShoppingCart, Sidebar } from "lucide-react";
 
 export default function Features() {
   const features = [
@@ -7,7 +7,7 @@ export default function Features() {
       title: "PDF Extraction",
       description: "Chat with PDFs up to 500 pages",
       details: [
-        "Extract text from entire books and research papers",
+        "Extract text from books and research papers",
         "Ask questions about specific sections",
         "Get answers with exact page citations",
         "Works with scanned PDFs (OCR support)"
@@ -31,20 +31,8 @@ export default function Features() {
       details: [
         "Clean text extraction from articles",
         "Works with news sites, blogs, documentation",
-        "Bypass paywalls (for content you can access)",
+        "Summarize news articles in seconds",
         "Smart content detection"
-      ]
-    },
-    {
-      icon: Layers,
-      title: "Multi-Tab Intelligence",
-      description: "Compare multiple tabs simultaneously (The Weave Advantage)",
-      details: [
-        "Chat with multiple tabs at once",
-        "Compare pricing and features across 3+ software tools",
-        "Synthesize arguments from multiple news articles",
-        "Find contradictions between PDFs and YouTube videos",
-        "Turn browser tabs into a single, intelligent knowledge base"
       ]
     },
     {
@@ -59,15 +47,14 @@ export default function Features() {
       ]
     },
     {
-      icon: Brain,
-      title: "Top-Tier AI Models",
-      description: "Access the world's smartest models directly",
+      icon: Lock,
+      title: "Privacy First",
+      description: "Your data stays yours",
       details: [
-        "OpenAI: GPT-4, GPT-4o-mini",
-        "Anthropic: Claude Sonnet, Claude Opus",
-        "Google: Gemini Pro, Gemini Flash",
-        "Perplexity, Grok, Llama, Deepseek (via BYOK)",
-        "Switch models anytime"
+        "Local storage for API keys",
+        "No conversation tracking",
+        "Content read only when you send a prompt",
+        "BYOK: Direct to AI provider, not our servers"
       ]
     },
     {
@@ -82,14 +69,36 @@ export default function Features() {
       ]
     },
     {
-      icon: Lock,
-      title: "Privacy First",
-      description: "Your data stays yours",
+      icon: Sidebar,
+      title: "Zero Clutter Experience",
+      description: "Stays hidden until you need it - no intrusions",
       details: [
-        "Local storage for API keys",
-        "No conversation tracking",
-        "Content read only when you send a prompt",
-        "BYOK: Direct to AI provider, not our servers"
+        "Completely hidden in sidebar until you open it",
+        "Never injects buttons or popups into websites",
+        "No floating icons or intrusive UI elements",
+        "Get clutter free browsing experience"
+      ]
+    },
+    {
+      icon: Layers,
+      title: "Multi-Tab Intelligence",
+      description: "Compare multiple tabs simultaneously (The Weave Advantage)",
+      details: [
+        "Chat with multiple tabs at once",
+        "Compare pricing and features across 3+ tabs",
+        "Synthesize arguments from multiple articles",
+        "Find contradictions between PDFs and YouTube videos"
+      ]
+    },
+    {
+      icon: Brain,
+      title: "BYOK: Model Freedom",
+      description: "Unique BYOK option - unlimited prompts for just $4.99/month",
+      details: [
+        "Only extension offering Bring Your Own Key (BYOK)",
+        "Use any model: GPT-4o, Claude, Gemini, Perplexity, Grok, Llama, Deepseek",
+        "Unlimited prompts with your own API key",
+        "Unbeatable value: $4.99/month for unlimited AI power"
       ]
     }
   ];

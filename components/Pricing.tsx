@@ -9,10 +9,9 @@ export default function Pricing() {
       duration: "",
       description: "Try all features risk-free",
       features: [
-        "50 prompts",
-        "All AI models (GPT-4, Claude, Gemini)",
+        "50 prompts (no time limit or credit card required)",
         "PDF support (500 pages)",
-        "Multi-tab comparison",
+        "Multi-tab comparison (up to 3 tabs)",
         "YouTube transcripts",
         "Google Docs integration",
         "Gemini Flash models included"
@@ -28,15 +27,14 @@ export default function Pricing() {
       description: "The most affordable research assistant",
       features: [
         "800 prompts/month with our API, OR",
-        "BYOK for unlimited prompts during subscription",
+        "BYOK option for unlimited prompts during subscription",
         "Multi-tab comparison (up to 3 tabs)",
         "All core features",
-        "Flash models (Gemini 2.5 Flash)",
-        "Power Users: Use GPT-4o or Claude with BYOK",
+        "Power Users: Use your choice of model with BYOK",
         "Cancel anytime"
       ],
       cta: "Get Started",
-      href: "/pricing",
+      href: "https://chrome.google.com/webstore",
       highlighted: true
     },
     {
@@ -45,15 +43,17 @@ export default function Pricing() {
       duration: "",
       description: "For power users",
       features: [
+        "All Core Features +",
         "Higher prompt limits with advanced models",
         "Unlimited tab pinning",
-        "Advanced models (Gemini Pro, GPT-4o, Claude Sonnet)",
+        "Dedicated Account page for analytics, insights and tracking",
+        "Support for Advanced models (Gemini Pro, GPT-4o, Claude Sonnet)",
         "Priority support",
         "Advanced analytics",
         "Custom integrations"
       ],
       cta: "Notify Me",
-      href: "/pricing",
+      href: "/contact",
       highlighted: false
     }
   ];
@@ -130,7 +130,7 @@ export default function Pricing() {
             💳 All plans include a free trial • No credit card required
           </p>
           <p className="text-slate-500 text-sm mt-2">
-            Questions? <Link href="mailto:support@weaveai.org" className="text-primary-600 hover:text-primary-700 font-semibold">Contact us</Link>
+            Questions? <Link href="/contact" className="text-primary-600 hover:text-primary-700 font-semibold">Contact us</Link>
           </p>
         </div>
       </div>

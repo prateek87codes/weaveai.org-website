@@ -9,15 +9,15 @@ export default function FAQ() {
   const faqs = [
     {
       question: "What's included in the free trial?",
-      answer: "The free trial includes 50 prompts. You get full access to all features including multi-tab comparison, all AI providers, and Gemini Flash models. No credit card required."
+      answer: "The free trial includes 50 prompts. You get full access to all features including multi-tab comparison and Gemini Flash models. No credit card required."
     },
     {
       question: "What's BYOK (Bring Your Own Key)?",
-      answer: "BYOK lets you use your own API keys from OpenAI, Anthropic, Google, Perplexity, Grok, Llama, Deepseek, or other providers. Your keys stay on your device and give you unlimited prompts. Perfect for users who already have API accounts."
+      answer: "BYOK option in Basic tier lets you use your own API keys from OpenAI, Anthropic, Google, Perplexity, Grok, Llama, Deepseek, or other providers. Your keys stay on your device and give you unlimited prompts. Perfect for users who already have API accounts."
     },
     {
       question: "How many tabs can I compare?",
-      answer: "Free tier: No comparison. Basic tier: Up to 3 tabs. Premium tier (coming soon): Unlimited tabs."
+      answer: "Trial and Basic tier: Up to 3 tabs. Premium tier (coming soon): Unlimited tabs."
     },
     {
       question: "Does WeaveAI work with Google Docs?",
@@ -33,7 +33,7 @@ export default function FAQ() {
     },
     {
       question: "Where is my content stored?",
-      answer: "All content is stored locally on your device only (chrome.storage.local). Content is never sent to WeaveAI servers. You can disable content caching in Settings → Privacy if you prefer."
+      answer: "All content is stored locally on your device only. Content is never sent to WeaveAI servers. You can disable content caching in Settings → Privacy if you prefer."
     },
     {
       question: "What happens to my API keys (BYOK)?",
@@ -98,7 +98,7 @@ export default function FAQ() {
         <div className="mt-12 text-center">
           <p className="text-slate-600 mb-4">Still have questions?</p>
           <a 
-            href="mailto:support@weaveai.org"
+            href="/contact"
             className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 font-semibold"
           >
             Contact our support team →
