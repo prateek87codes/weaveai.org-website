@@ -2,6 +2,29 @@
 
 Complete step-by-step guide to deploy weaveai.org to Vercel (FREE hosting).
 
+## ⚠️ Important: Repository Information
+
+**This website uses a SEPARATE GitHub repository from the main WeaveAI extension:**
+
+- **Website Repository:** `https://github.com/prateek87codes/weaveai.org-website`
+- **Main Extension Repository:** `https://github.com/prateek87codes/WeaveAI`
+
+**When pushing website changes, always work from the `/website` directory and push to the `weaveai.org-website` repository, NOT the main WeaveAI repository.**
+
+```bash
+# Always work from the website directory
+cd /Users/prateekgoel/Documents/WeaveAI/website
+
+# Verify you're pushing to the correct repository
+git remote -v
+# Should show: origin https://github.com/prateek87codes/weaveai.org-website.git
+
+# Push changes
+git add .
+git commit -m "Your commit message"
+git push origin main
+```
+
 ## ✅ Prerequisites Checklist
 
 - [ ] Node.js 18+ installed
@@ -74,7 +97,12 @@ If build succeeds with no errors, you're ready to deploy!
 
 ## 🐙 Step 4: Push to GitHub
 
+**⚠️ IMPORTANT: Use the correct repository URL: `weaveai.org-website`**
+
 ```bash
+# Make sure you're in the website directory
+cd /Users/prateekgoel/Documents/WeaveAI/website
+
 # Initialize Git (if not already done)
 git init
 
@@ -87,8 +115,11 @@ git commit -m "WeaveAI website initial deployment"
 # Create main branch
 git branch -M main
 
-# Add GitHub remote (create repo first at github.com)
-git remote add origin https://github.com/prateek87codes/weaveai-website.git
+# Add GitHub remote (use the CORRECT repository URL)
+git remote add origin https://github.com/prateek87codes/weaveai.org-website.git
+
+# Verify the remote is correct
+git remote -v
 
 # Push to GitHub
 git push -u origin main
@@ -221,19 +252,28 @@ Enter: `https://weaveai.org` and verify OG image appears
 
 ### Making Changes
 
+**⚠️ Always work from the `/website` directory and push to `weaveai.org-website` repository**
+
 ```bash
+# Make sure you're in the website directory
+cd /Users/prateekgoel/Documents/WeaveAI/website
+
 # Make your edits to files
 # For example, edit app/page.tsx
 
 # Test locally
 npm run dev
 
+# Verify you're in the correct repository
+git remote -v
+# Should show: origin https://github.com/prateek87codes/weaveai.org-website.git
+
 # Commit changes
 git add .
 git commit -m "Update homepage copy"
 
-# Push to GitHub
-git push
+# Push to GitHub (this will trigger Vercel deployment)
+git push origin main
 
 # Vercel will automatically redeploy!
 ```

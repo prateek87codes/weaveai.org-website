@@ -4,6 +4,29 @@ Official website for WeaveAI - A Chrome extension that enables users to chat wit
 
 🌐 **Live Site:** [weaveai.org](https://weaveai.org)
 
+## ⚠️ Important: Repository Information
+
+**This website uses a SEPARATE GitHub repository from the main WeaveAI extension:**
+
+- **Website Repository:** `https://github.com/prateek87codes/weaveai.org-website`
+- **Main Extension Repository:** `https://github.com/prateek87codes/WeaveAI`
+
+**When pushing website changes, always work from the `/website` directory and push to the `weaveai.org-website` repository, NOT the main WeaveAI repository.**
+
+```bash
+# Always work from the website directory
+cd /Users/prateekgoel/Documents/WeaveAI/website
+
+# Verify you're pushing to the correct repository
+git remote -v
+# Should show: origin https://github.com/prateek87codes/weaveai.org-website.git
+
+# Push changes
+git add .
+git commit -m "Your commit message"
+git push origin main
+```
+
 ## 🚀 Quick Start
 
 ### Prerequisites
