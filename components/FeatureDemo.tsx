@@ -1,4 +1,4 @@
-import { MessageSquare, FileText, ExternalLink } from "lucide-react";
+import { MessageSquare, ExternalLink } from "lucide-react";
 
 export default function FeatureDemo() {
   return (
@@ -10,7 +10,7 @@ export default function FeatureDemo() {
             Chat & browse side by side
           </p>
           <p className="mt-4 text-lg text-slate-600">
-            No copy-pasting. No switching tabs. Just ask questions naturally.
+            Most AI extensions force you to copy-paste context or chat with one page at a time. WeaveAI connects the dots.
           </p>
         </div>
         
@@ -65,10 +65,6 @@ export default function FeatureDemo() {
                   The study found three key results: 1) Sample size increased effectiveness by 40%, 
                   2) Methodology improvements led to higher accuracy, and 3) Long-term effects were significant...
                 </p>
-              </div>
-              <div className="flex items-center gap-2 text-sm text-slate-500">
-                <FileText className="h-4 w-4" />
-                <span>Sources cited with exact page numbers</span>
               </div>
             </div>
           </div>

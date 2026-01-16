@@ -8,10 +8,11 @@ export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navigation = [
-    { name: "Features", href: "/features" },
-    { name: "Pricing", href: "/pricing" },
-    { name: "Use Cases", href: "/#use-cases" },
+    { name: "Features", href: "/#features" },
+    { name: "Pricing", href: "/#pricing" },
+    { name: "Use Cases", href: "/#what-can-you-do" },
     { name: "FAQ", href: "/#faq" },
+    { name: "Contact Us", href: "/contact" },
   ];
 
   return (
@@ -33,12 +34,12 @@ export default function Navigation() {
           </div>
 
           {/* Desktop navigation */}
-          <div className="hidden lg:flex lg:gap-x-8">
+          <div className="hidden lg:flex lg:items-center lg:gap-x-6">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-sm font-semibold leading-6 text-slate-700 hover:text-primary-600 transition-colors"
+                className="text-sm font-semibold leading-6 text-slate-700 hover:text-primary-600 transition-colors relative py-2"
               >
                 {item.name}
               </Link>
@@ -46,17 +47,11 @@ export default function Navigation() {
           </div>
 
           {/* CTA Button */}
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-4">
-            <Link
-              href="/#pricing"
-              className="text-sm font-semibold leading-6 text-slate-700 hover:text-primary-600 transition-colors"
-            >
-              Sign in
-            </Link>
+          <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center">
             <Link
               href="https://chrome.google.com/webstore"
               target="_blank"
-              className="rounded-lg bg-primary-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-500 transition-all hover:scale-105"
+              className="rounded-lg bg-primary-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-500 transition-all hover:scale-105 flex items-center"
             >
               Add to Chrome
             </Link>
@@ -93,14 +88,7 @@ export default function Navigation() {
                   {item.name}
                 </Link>
               ))}
-              <div className="border-t border-slate-200 pt-4 space-y-2">
-                <Link
-                  href="/#pricing"
-                  className="block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-700 hover:bg-slate-50"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Sign in
-                </Link>
+              <div className="border-t border-slate-200 pt-4">
                 <Link
                   href="https://chrome.google.com/webstore"
                   target="_blank"

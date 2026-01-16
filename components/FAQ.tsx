@@ -8,52 +8,52 @@ export default function FAQ() {
 
   const faqs = [
     {
-      question: "How does WeaveAI work?",
-      answer: "WeaveAI is a Chrome extension that adds an AI chat panel to your browser. When you open a webpage, PDF, or YouTube video, the extension automatically extracts the content and makes it available to AI models (GPT-4, Claude, Gemini). You can then ask questions and get instant answers with citations."
+      question: "What's included in the free trial?",
+      answer: "The free trial includes 50 prompts. You get full access to all features including multi-tab comparison, all AI providers, and Gemini Flash models. No credit card required."
     },
     {
-      question: "Do I need to copy-paste content?",
-      answer: "No! That's the magic of WeaveAI. The extension automatically reads the page content when you open it. Just start asking questions, and the AI already knows what's on the page. Works with web pages, PDFs (up to 500 pages), YouTube videos, and Google Docs."
+      question: "What's BYOK (Bring Your Own Key)?",
+      answer: "BYOK lets you use your own API keys from OpenAI, Anthropic, Google, Perplexity, Grok, Llama, Deepseek, or other providers. Your keys stay on your device and give you unlimited prompts. Perfect for users who already have API accounts."
     },
     {
-      question: "What AI models can I use?",
-      answer: "WeaveAI supports 7 AI providers: OpenAI (GPT-4, GPT-4o-mini), Anthropic Claude (Sonnet, Opus), Google Gemini (Pro, Flash), and more. You can switch between models based on your needs. Premium tier gives you separate pools for Flash and Advanced models."
+      question: "How many tabs can I compare?",
+      answer: "Free tier: No comparison. Basic tier: Up to 3 tabs. Premium tier (coming soon): Unlimited tabs."
     },
     {
-      question: "Is my data private and secure?",
-      answer: "Absolutely. WeaveAI is privacy-first by design. Your API keys and chat history are stored locally in your browser using Chrome's secure storage (encrypted). We don't collect or store your conversations or page content. When you use BYOK (Bring Your Own Key), your data goes directly to the AI provider, never through our servers."
+      question: "Does WeaveAI work with Google Docs?",
+      answer: "Yes! One-time Google login (OAuth), then seamless access to Google Docs, Sheets, and Slides. We use official Google Drive APIs - no scraping, fully privacy-compliant."
     },
     {
-      question: "Can I use my own API keys?",
-      answer: "Yes! All plans support BYOK (Bring Your Own Key). If you already have OpenAI, Anthropic, or Google AI API keys, you can use them for unlimited prompts during your subscription period. This is Option B in our pricing."
+      question: "Which AI providers are supported?",
+      answer: "WeaveAI supports OpenAI (GPT-4, GPT-4o-mini), Anthropic (Claude), Google (Gemini), Perplexity, Grok, Llama, and Deepseek. You can use any provider with BYOK."
     },
     {
-      question: "What's the difference between Option A (Managed) and Option B (BYOK)?",
-      answer: "Option A (Managed): We provide the AI access. You get unlimited prompts through our API keys. Option B (BYOK): You provide your own API keys. You get unlimited prompts using your keys. Both options are available at the same price on Basic and Premium tiers."
+      question: "Does WeaveAI store my passwords?",
+      answer: "No. WeaveAI never has access to your passwords. For Google Docs/Sheets/Slides, we use OAuth 2.0, which means Google handles authentication and we only receive short-lived access tokens (not passwords)."
     },
     {
-      question: "How does the 48-hour free trial work?",
-      answer: "Install the extension and you get 48 hours to try all features with 30 free prompts. No credit card required. You can test PDFs, multi-tab comparison, YouTube transcripts, Google Docs—everything. After the trial, choose a plan or continue with your own API keys."
+      question: "Where is my content stored?",
+      answer: "All content is stored locally on your device only (chrome.storage.local). Content is never sent to WeaveAI servers. You can disable content caching in Settings → Privacy if you prefer."
     },
     {
-      question: "Can I compare multiple tabs?",
-      answer: "Yes! WeaveAI supports pinning up to 5 tabs simultaneously. You can ask questions like 'Compare the pricing in these 3 articles' or 'What do all these papers say about X?' The AI analyzes all pinned tabs together and gives you a comprehensive answer."
+      question: "What happens to my API keys (BYOK)?",
+      answer: "Your API keys are stored encrypted on your device only. They go directly from your extension to your chosen LLM provider (OpenAI, Anthropic, etc.) - they never touch WeaveAI servers. You can delete them anytime in Settings."
     },
     {
-      question: "Does it work with PDFs?",
-      answer: "Yes! WeaveAI can extract and analyze PDFs up to 500 pages. Perfect for research papers, books, reports, and documentation. Just open a PDF in Chrome and start chatting with it."
-    },
-    {
-      question: "What about YouTube videos?",
-      answer: "WeaveAI automatically extracts YouTube video transcripts (when available) and lets you chat with them. You can ask 'What are the key points?' or 'Jump to the part about X' and get exact timestamps. Great for lectures, tutorials, and long-form content."
+      question: "Does WeaveAI track my browsing?",
+      answer: "No. WeaveAI only reads page content when you explicitly send a prompt. It doesn't track your browsing history or monitor your activity passively."
     },
     {
       question: "Can I cancel anytime?",
-      answer: "Yes, you can cancel your subscription at any time. No questions asked. If you cancel, you'll retain access until the end of your billing period. No refunds for partial months, but you keep all the features until expiry."
+      answer: "Yes. Cancel your subscription anytime in Settings → Subscription. No long-term commitments."
     },
     {
-      question: "Do you offer refunds?",
-      answer: "We offer a full 48-hour free trial so you can test everything before paying. Once you subscribe, we don't offer refunds for partial months. However, you can cancel anytime and keep access until the end of your billing period."
+      question: "What happens if I exceed my monthly prompt limit?",
+      answer: "You'll see a notification when approaching your limit. You can upgrade to a higher tier, switch to BYOK, or wait for the monthly reset."
+    },
+    {
+      question: "Can I use WeaveAI offline?",
+      answer: "No. WeaveAI requires an internet connection to communicate with AI providers. However, cached content can be accessed offline."
     }
   ];
 

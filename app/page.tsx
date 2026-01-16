@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import FeatureDemo from "@/components/FeatureDemo";
+import Features from "@/components/Features";
 import UseCases from "@/components/UseCases";
 import Comparison from "@/components/Comparison";
 import Pricing from "@/components/Pricing";
@@ -11,6 +12,7 @@ export default function Home() {
     <>
       <Hero />
       <FeatureDemo />
+      <Features />
       <UseCases />
       <Comparison />
       <Pricing />

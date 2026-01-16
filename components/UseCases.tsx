@@ -1,13 +1,13 @@
-import { GraduationCap, Briefcase, Pencil, CheckCircle } from "lucide-react";
+import { GraduationCap, Briefcase, Pencil, ShoppingBag, CheckCircle } from "lucide-react";
 
 export default function UseCases() {
   const cases = [
     {
       icon: GraduationCap,
       emoji: "🎓",
-      title: "Students & Researchers",
+      title: "Students",
       subtitle: "Your AI Study Partner",
-      description: "Master any subject faster. Transform research papers, PDFs, and lectures into interactive Q&A sessions.",
+      description: "Write essays faster by connecting 10 sources at once. Synthesize research papers from multiple tabs. Get instant summaries for study guides without copy-pasting.",
       features: [
         "Chat with 500-page research papers",
         "Compare multiple studies side-by-side",
@@ -20,25 +20,25 @@ export default function UseCases() {
       emoji: "💼",
       title: "Professionals",
       subtitle: "Work Smarter, Not Harder",
-      description: "Analyze reports, documentation, and technical content at lightning speed.",
+      description: "Compare competitor websites and products across multiple tabs. Analyze long documents in seconds. Extract key insights from PDFs and cross-reference data across multiple studies.",
       features: [
         "Summarize lengthy documents instantly",
-        "Extract action items from meeting notes",
         "Compare competitor analyses",
-        "Research industry trends faster"
+        "Extract key insights from PDFs",
+        "Cross-reference data across studies"
       ]
     },
     {
-      icon: Pencil,
-      emoji: "✍️",
-      title: "Content Creators",
-      subtitle: "Research at Scale",
-      description: "Gather insights from multiple sources. Create well-researched content in half the time.",
+      icon: ShoppingBag,
+      emoji: "🛒",
+      title: "Shoppers",
+      subtitle: "Compare Products Instantly",
+      description: "Compare product specs across Amazon, YouTube, and Tech Blogs instantly. Get AI-powered recommendations by connecting multiple product pages. Find the best deals quickly without switching tabs.",
       features: [
-        "Analyze YouTube video transcripts",
-        "Extract insights from multiple articles",
-        "Find supporting evidence quickly",
-        "Generate content ideas from research"
+        "Compare pricing and features across 3+ tools",
+        "Get AI-powered recommendations",
+        "Find the best deals quickly",
+        "No more switching tabs"
       ]
     }
   ];
@@ -80,7 +80,7 @@ export default function UseCases() {
         <div className="mt-16 text-center">
           <p className="text-slate-600 mb-6">Also perfect for:</p>
           <div className="flex flex-wrap justify-center gap-3">
-            {["Legal Research", "Medical Literature", "Technical Documentation", "News Analysis", "Product Reviews", "Academic Papers"].map((tag) => (
+            {["Researchers", "Legal Research", "Medical Literature", "Technical Documentation", "News Analysis", "Academic Papers"].map((tag) => (
               <span key={tag} className="inline-flex items-center rounded-full bg-primary-50 px-4 py-2 text-sm font-medium text-primary-700 ring-1 ring-primary-600/10">
                 {tag}
               </span>

@@ -6,16 +6,16 @@ export default function Pricing() {
     {
       name: "Free Trial",
       price: "$0",
-      duration: "48 hours",
+      duration: "",
       description: "Try all features risk-free",
       features: [
-        "30 free prompts",
+        "50 prompts",
         "All AI models (GPT-4, Claude, Gemini)",
         "PDF support (500 pages)",
-        "Multi-tab comparison (5 tabs)",
+        "Multi-tab comparison",
         "YouTube transcripts",
         "Google Docs integration",
-        "2M token context window"
+        "Gemini Flash models included"
       ],
       cta: "Start Free Trial",
       href: "https://chrome.google.com/webstore",
@@ -25,14 +25,14 @@ export default function Pricing() {
       name: "Basic",
       price: "$4.99",
       duration: "per month",
-      description: "Perfect for regular users",
+      description: "The most affordable research assistant",
       features: [
-        "Everything in Free Trial",
-        "Unlimited prompts (managed)",
-        "OR bring your own API key",
-        "Chat history backup",
-        "Priority support",
-        "Early access to new features",
+        "800 prompts/month with our API, OR",
+        "BYOK for unlimited prompts during subscription",
+        "Multi-tab comparison (up to 3 tabs)",
+        "All core features",
+        "Flash models (Gemini 2.5 Flash)",
+        "Power Users: Use GPT-4o or Claude with BYOK",
         "Cancel anytime"
       ],
       cta: "Get Started",
@@ -41,19 +41,18 @@ export default function Pricing() {
     },
     {
       name: "Premium",
-      price: "$14.99",
-      duration: "per month",
+      price: "Coming Soon",
+      duration: "",
       description: "For power users",
       features: [
-        "Everything in Basic",
-        "Separate Flash & Advanced pools",
-        "Higher rate limits",
-        "Premium AI models access",
+        "Higher prompt limits with advanced models",
+        "Unlimited tab pinning",
+        "Advanced models (Gemini Pro, GPT-4o, Claude Sonnet)",
+        "Priority support",
         "Advanced analytics",
-        "Premium support (24/7)",
         "Custom integrations"
       ],
-      cta: "Go Premium",
+      cta: "Notify Me",
       href: "/pricing",
       highlighted: false
     }
@@ -128,7 +127,7 @@ export default function Pricing() {
         {/* Additional info */}
         <div className="mt-12 text-center">
           <p className="text-slate-600 text-sm">
-            💳 All plans include a 48-hour free trial • No credit card required
+            💳 All plans include a free trial • No credit card required
           </p>
           <p className="text-slate-500 text-sm mt-2">
             Questions? <Link href="mailto:support@weaveai.org" className="text-primary-600 hover:text-primary-700 font-semibold">Contact us</Link>

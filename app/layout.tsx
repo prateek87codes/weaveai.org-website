@@ -7,8 +7,8 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "WeaveAI - Chat with Any Webpage Using AI",
-  description: "Transform how you browse the web. Chat with any webpage, PDF, or YouTube video using GPT-4, Claude, and Gemini. Extract insights from 500-page documents instantly.",
+  title: "WeaveAI - Stop Switching Tabs. Start Connecting Them.",
+  description: "The first browser extension that doesn't just read one page—it reads your entire workflow. Select multiple open tabs, PDFs, and YouTube videos, and chat with them all simultaneously.",
   keywords: "AI, Chrome Extension, ChatGPT, PDF reader, YouTube transcripts, web scraping, AI assistant",
   authors: [{ name: "WeaveAI" }],
   icons: {
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
   },
   manifest: "/favicon_io/site.webmanifest",
   openGraph: {
-    title: "WeaveAI - Chat with Any Webpage Using AI",
-    description: "Transform how you browse the web. Chat with any webpage, PDF, or YouTube video using AI.",
+    title: "WeaveAI - Stop Switching Tabs. Start Connecting Them.",
+    description: "The first browser extension that doesn't just read one page—it reads your entire workflow. Select multiple open tabs, PDFs, and YouTube videos, and chat with them all simultaneously.",
     url: "https://weaveai.org",
     siteName: "WeaveAI",
     images: [
@@ -44,8 +44,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "WeaveAI - Chat with Any Webpage Using AI",
-    description: "Transform how you browse the web. Chat with any webpage, PDF, or YouTube video using AI.",
+    title: "WeaveAI - Stop Switching Tabs. Start Connecting Them.",
+    description: "The first browser extension that doesn't just read one page—it reads your entire workflow. Select multiple open tabs, PDFs, and YouTube videos, and chat with them all simultaneously.",
     images: ["/og-image.png"],
   },
   robots: {

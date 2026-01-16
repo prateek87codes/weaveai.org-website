@@ -31,26 +31,8 @@ export default function CTA() {
         </div>
         
         <p className="mt-8 text-sm text-primary-200">
-          ⚡ 48-hour free trial • 30 free prompts • No credit card required
+          ⚡ 50 free prompts • No credit card required • Privacy-first
         </p>
-
-        {/* Social proof */}
-        <div className="mt-12 pt-12 border-t border-primary-400/30">
-          <div className="grid sm:grid-cols-3 gap-8">
-            <div>
-              <div className="text-4xl font-bold text-white">500+</div>
-              <div className="text-primary-200 mt-2">Active users</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-white">10K+</div>
-              <div className="text-primary-200 mt-2">Prompts processed</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-white">4.8/5</div>
-              <div className="text-primary-200 mt-2">User rating</div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

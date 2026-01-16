@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="relative overflow-hidden bg-gradient-to-b from-slate-50 to-white pt-24">
       {/* Subtle woven pattern background */}
       <div 
-        className="absolute inset-0 opacity-[0.03]" 
+        className="absolute inset-0 opacity-[0.06]" 
         style={{
           backgroundImage: 'repeating-linear-gradient(45deg, #0d9488 0px, #0d9488 2px, transparent 2px, transparent 10px), repeating-linear-gradient(-45deg, #d4a574 0px, #d4a574 2px, transparent 2px, transparent 10px)',
           backgroundSize: '20px 20px'
@@ -23,17 +23,15 @@ export default function Hero() {
           
           {/* Main headline */}
           <h1 className="text-5xl font-bold tracking-tight text-slate-900 sm:text-7xl animate-slide-up">
-            Stop reading.
+            Stop Switching Tabs.
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-primary-800">
-              Start asking.
+              Start Connecting Them.
             </span>
           </h1>
           
           <p className="mt-6 text-xl leading-8 text-slate-600 max-w-2xl mx-auto animate-slide-up">
-            Chat with any webpage, PDF, or YouTube video using AI.
-            Get instant answers from <span className="font-semibold text-slate-900">500-page documents</span>.
-            Compare <span className="font-semibold text-slate-900">multiple tabs</span> in seconds.
+            WeaveAI is the first browser extension that doesn't just read one page—it reads your entire workflow. Select multiple open tabs, PDFs, and YouTube videos, and chat with them all simultaneously.
           </p>
           
           {/* CTA buttons */}
@@ -57,7 +55,7 @@ export default function Hero() {
           
           {/* Trust indicators */}
           <p className="mt-8 text-sm text-slate-500">
-            ⚡ 48-hour free trial • 30 free prompts • No credit card required
+            ⚡ 50 free prompts • No credit card required • Privacy-first
           </p>
         </div>
         
@@ -92,7 +90,7 @@ export default function Hero() {
               <p className="text-sm font-semibold text-slate-900">🎥 YouTube transcripts</p>
             </div>
             <div className="absolute -left-8 bottom-1/4 bg-white rounded-lg shadow-lg p-4 animate-pulse-slow" style={{animationDelay: '2s'}}>
-              <p className="text-sm font-semibold text-slate-900">📊 5-tab comparison</p>
+              <p className="text-sm font-semibold text-slate-900">🔗 Multi-tab intelligence</p>
             </div>
           </div>
         </div>

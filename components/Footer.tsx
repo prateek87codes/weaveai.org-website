@@ -1,18 +1,15 @@
 import Link from "next/link";
-import { Twitter, Github, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 
 export default function Footer() {
   const navigation = {
     product: [
-      { name: "Features", href: "/features" },
-      { name: "Pricing", href: "/pricing" },
+      { name: "Features", href: "/#features" },
+      { name: "Pricing", href: "/#pricing" },
       { name: "FAQ", href: "/#faq" },
-      { name: "Changelog", href: "/changelog" },
     ],
     support: [
-      { name: "Documentation", href: "/docs" },
-      { name: "Contact", href: "mailto:support@weaveai.org" },
-      { name: "Status", href: "/status" },
+      { name: "Contact Us", href: "/contact" },
     ],
     legal: [
       { name: "Privacy Policy", href: "/privacy" },
@@ -42,18 +39,10 @@ export default function Footer() {
               Transform how you browse the web. Chat with any webpage, PDF, or YouTube video using AI.
             </p>
             <div className="flex space-x-6">
-              <a href="https://twitter.com/weaveai" className="text-slate-400 hover:text-slate-300">
-                <span className="sr-only">Twitter</span>
-                <Twitter className="h-6 w-6" />
-              </a>
-              <a href="https://github.com/prateek87codes/WeaveAI" className="text-slate-400 hover:text-slate-300">
-                <span className="sr-only">GitHub</span>
-                <Github className="h-6 w-6" />
-              </a>
-              <a href="mailto:support@weaveai.org" className="text-slate-400 hover:text-slate-300">
-                <span className="sr-only">Email</span>
+              <Link href="/contact" className="text-slate-400 hover:text-slate-300">
+                <span className="sr-only">Contact Us</span>
                 <Mail className="h-6 w-6" />
-              </a>
+              </Link>
             </div>
           </div>
           <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
