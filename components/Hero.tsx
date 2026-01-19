@@ -72,25 +72,14 @@ export default function Hero() {
                 weaveai.org
               </div>
             </div>
-            <div className="bg-gradient-to-br from-primary-50 to-slate-50 p-8 min-h-[400px] flex items-center justify-center">
-              <div className="text-center">
-                <div className="text-8xl mb-4">💬</div>
-                <p className="text-slate-600 text-lg">Demo video/screenshot goes here</p>
-                <p className="text-slate-500 text-sm mt-2">Add your extension demo screenshot to /public/demo.png</p>
-              </div>
-            </div>
-          </div>
-          
-          {/* Floating feature badges */}
-          <div className="hidden lg:block">
-            <div className="absolute -left-8 top-1/4 bg-white rounded-lg shadow-lg p-4 animate-pulse-slow">
-              <p className="text-sm font-semibold text-slate-900">✅ 500-page PDFs</p>
-            </div>
-            <div className="absolute -right-8 top-1/3 bg-white rounded-lg shadow-lg p-4 animate-pulse-slow" style={{animationDelay: '1s'}}>
-              <p className="text-sm font-semibold text-slate-900">🎥 YouTube transcripts</p>
-            </div>
-            <div className="absolute -left-8 bottom-1/4 bg-white rounded-lg shadow-lg p-4 animate-pulse-slow" style={{animationDelay: '2s'}}>
-              <p className="text-sm font-semibold text-slate-900">🔗 Multi-tab intelligence</p>
+            <div className="relative w-full bg-slate-900" style={{ paddingBottom: '56.25%' /* 16:9 aspect ratio */ }}>
+              <iframe
+                className="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/nsWcNF4aGlk"
+                title="WeaveAI Demo Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
             </div>
           </div>
         </div>

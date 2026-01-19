@@ -1,6 +1,34 @@
-import { MessageSquare, ExternalLink } from "lucide-react";
+"use client";
+
+import { useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+
+const screenshots = [
+  { src: "/screenshot-article.jpg", alt: "Article Summary - Get instant insights from any article" },
+  { src: "/screenshot-multitab.jpg", alt: "Multi-Tab Review - Compare multiple sources" },
+  { src: "/screenshot-opening.jpg", alt: "Opening Interface - Clean sidebar experience" },
+  { src: "/screenshot-subscriptions.jpg", alt: "Subscription Options - Flexible pricing" },
+];
 
 export default function FeatureDemo() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const goToPrevious = () => {
+    setCurrentIndex((prevIndex) => 
+      prevIndex === 0 ? screenshots.length - 1 : prevIndex - 1
+    );
+  };
+
+  const goToNext = () => {
+    setCurrentIndex((prevIndex) => 
+      prevIndex === screenshots.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const goToSlide = (index: number) => {
+    setCurrentIndex(index);
+  };
+
   return (
     <section className="bg-white py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -14,59 +42,51 @@ export default function FeatureDemo() {
           </p>
         </div>
         
-        {/* Side-by-side demo */}
-        <div className="grid lg:grid-cols-2 gap-8 items-start">
-          {/* Browser view */}
-          <div className="space-y-4">
-            <div className="flex items-center gap-2 mb-2">
-              <ExternalLink className="h-5 w-5 text-primary-600" />
-              <h3 className="font-semibold text-lg text-slate-900">Any webpage</h3>
-            </div>
-            <div className="bg-slate-100 rounded-t-lg p-3 flex items-center gap-2">
-              <div className="flex gap-1.5">
-                <div className="h-3 w-3 rounded-full bg-red-400" />
-                <div className="h-3 w-3 rounded-full bg-yellow-400" />
-                <div className="h-3 w-3 rounded-full bg-green-400" />
-              </div>
-              <div className="flex-1 bg-white rounded px-4 py-1 text-sm text-slate-500">
-                https://research-paper.com/study...
-              </div>
-            </div>
-            <div className="border-2 border-slate-200 rounded-b-lg overflow-hidden bg-white">
-              <div className="p-6 space-y-3">
-                <div className="h-4 bg-slate-200 rounded w-full" />
-                <div className="h-4 bg-slate-200 rounded w-5/6" />
-                <div className="h-4 bg-slate-200 rounded w-4/6" />
-                <div className="h-4 bg-primary-200 rounded w-full mt-4" />
-                <div className="h-4 bg-slate-200 rounded w-full" />
-                <div className="h-4 bg-slate-200 rounded w-3/4" />
-              </div>
+        {/* Screenshot Carousel */}
+        <div className="relative max-w-5xl mx-auto">
+          <div className="relative rounded-xl shadow-2xl bg-slate-50 overflow-hidden">
+            {/* Single Image Display */}
+            <div className="relative w-full">
+              <img
+                src={screenshots[currentIndex].src}
+                alt={screenshots[currentIndex].alt}
+                className="w-full h-auto object-contain"
+              />
+              
+              {/* Previous Button */}
+              <button
+                onClick={goToPrevious}
+                className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white rounded-full p-2 shadow-lg transition-all duration-200 hover:scale-110"
+                aria-label="Previous screenshot"
+              >
+                <ChevronLeft className="h-6 w-6 text-slate-700" />
+              </button>
+              
+              {/* Next Button */}
+              <button
+                onClick={goToNext}
+                className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white rounded-full p-2 shadow-lg transition-all duration-200 hover:scale-110"
+                aria-label="Next screenshot"
+              >
+                <ChevronRight className="h-6 w-6 text-slate-700" />
+              </button>
             </div>
           </div>
-          
-          {/* Chat view */}
-          <div className="space-y-4">
-            <div className="flex items-center gap-2 mb-2">
-              <MessageSquare className="h-5 w-5 text-primary-600" />
-              <h3 className="font-semibold text-lg text-slate-900">AI understands it</h3>
-            </div>
-            <div className="bg-gradient-to-r from-primary-600 to-primary-700 rounded-t-lg p-4 text-white font-semibold flex items-center gap-2">
-              <img src="/logo.png" alt="WeaveAI" className="h-6 w-6" />
-              WeaveAI Chat
-            </div>
-            <div className="border-2 border-primary-200 rounded-b-lg p-6 bg-white space-y-4">
-              <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
-                <p className="text-xs text-slate-500 mb-1">You asked:</p>
-                <p className="font-medium text-slate-900">"What are the main findings of this study?"</p>
-              </div>
-              <div className="bg-primary-50 rounded-lg p-4 border border-primary-200">
-                <p className="text-xs text-primary-700 font-medium mb-2">AI Response:</p>
-                <p className="text-slate-800 leading-relaxed">
-                  The study found three key results: 1) Sample size increased effectiveness by 40%, 
-                  2) Methodology improvements led to higher accuracy, and 3) Long-term effects were significant...
-                </p>
-              </div>
-            </div>
+
+          {/* Navigation Dots */}
+          <div className="flex justify-center mt-6 gap-2">
+            {screenshots.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => goToSlide(index)}
+                className={`h-2 rounded-full transition-all duration-300 ${
+                  index === currentIndex
+                    ? "bg-primary-600 w-8"
+                    : "bg-slate-300 w-2 hover:bg-slate-400"
+                }`}
+                aria-label={`Go to screenshot ${index + 1}`}
+              />
+            ))}
           </div>
         </div>
 
@@ -92,4 +112,3 @@ export default function FeatureDemo() {
     </section>
   );
 }
-
