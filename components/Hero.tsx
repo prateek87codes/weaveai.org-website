@@ -72,14 +72,16 @@ export default function Hero() {
                 weaveai.org
               </div>
             </div>
-            <div className="relative w-full bg-slate-900" style={{ paddingBottom: '56.25%' /* 16:9 aspect ratio */ }}>
-              <iframe
-                className="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/nsWcNF4aGlk"
-                title="WeaveAI Demo Video"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
+            <div className="relative w-full bg-slate-900">
+              <video
+                className="w-full h-auto"
+                controls
+                preload="metadata"
+                poster="/screenshot-opening.jpg"
+              >
+                <source src="/weaveai-demo.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
         </div>
