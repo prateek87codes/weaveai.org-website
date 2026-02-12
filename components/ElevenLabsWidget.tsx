@@ -1,13 +1,19 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Script from "next/script";
 
 export default function ElevenLabsWidget() {
+  const widgetRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
-    // Small delay to ensure widget loads properly
+    // Create the custom element after script loads
     const timer = setTimeout(() => {
-      // The widget should auto-open based on ElevenLabs config
+      if (widgetRef.current && !widgetRef.current.querySelector('elevenlabs-convai')) {
+        const widget = document.createElement('elevenlabs-convai');
+        widget.setAttribute('agent-id', 'agent_8001kh8hmpegfgbr4w1qevq32syq');
+        widgetRef.current.appendChild(widget);
+      }
     }, 1000);
 
     return () => clearTimeout(timer);
@@ -20,7 +26,7 @@ export default function ElevenLabsWidget() {
         strategy="lazyOnload"
         type="text/javascript"
       />
-      <elevenlabs-convai agent-id="agent_8001kh8hmpegfgbr4w1qevq32syq"></elevenlabs-convai>
+      <div ref={widgetRef} />
     </>
   );
 }
