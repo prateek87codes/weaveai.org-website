@@ -3,122 +3,193 @@ export default function TermsPage() {
     <div className="bg-white">
       <div className="mx-auto max-w-4xl px-6 py-24 lg:px-8">
         <h1 className="text-4xl font-bold tracking-tight text-slate-900 mb-8">Terms of Service</h1>
-        <p className="text-sm text-slate-500 mb-12">Last updated: January 17, 2026</p>
+        <p className="text-sm text-slate-500 mb-12">Last updated: December 25, 2025</p>
         
         <div className="prose prose-slate max-w-none">
           <section className="mb-12">
             <h2 className="text-2xl font-bold text-slate-900 mb-4">1. Acceptance of Terms</h2>
             <p className="text-slate-700 leading-relaxed">
-              By installing, accessing, or using the WeaveAI Chrome extension ("the Service" or "Extension"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree, you must uninstall the Extension immediately.
+              By installing and using WeaveAI ("the Extension"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the Extension.
             </p>
           </section>
 
           <section className="mb-12">
             <h2 className="text-2xl font-bold text-slate-900 mb-4">2. Description of Service</h2>
+            <p className="text-slate-700 leading-relaxed mb-4">
+              WeaveAI is a Chrome extension that enables users to chat with web pages, PDFs, YouTube videos, and Google Docs using AI language models (GPT-4, Claude, Gemini, etc.).
+            </p>
             <p className="text-slate-700 leading-relaxed">
-              WeaveAI provides an AI-powered browser interface that enables users to synthesize information from web pages, PDFs, and videos using third-party Large Language Models (LLMs). The Service is provided on a "Freemium" basis, offering a limited free tier and paid subscription tiers.
+              The Extension is provided on a freemium basis: a free trial followed by optional paid subscription plans.
             </p>
           </section>
 
           <section className="mb-12">
             <h2 className="text-2xl font-bold text-slate-900 mb-4">3. User Accounts</h2>
-            <ul className="list-disc pl-6 space-y-2 text-slate-700">
-              <li><strong>3.1 Registration:</strong> A valid email address is required to create an account. You agree to provide accurate information.</li>
-              <li><strong>3.2 Security:</strong> You are responsible for all activity under your account. WeaveAI is not liable for loss or damages arising from your failure to protect your credentials.</li>
-            </ul>
-          </section>
-
-          <section className="mb-12">
-            <h2 className="text-2xl font-bold text-slate-900 mb-4">4. Subscription, Billing & Refunds (CRITICAL)</h2>
-            <ul className="list-disc pl-6 space-y-2 text-slate-700 mb-4">
-              <li><strong>4.1 Free Starter Plan:</strong> New users receive an allowance of <strong>50 Smart Prompts</strong> to test the Service. This is a one-time allowance, not a recurring monthly grant. We reserve the right to modify trial terms without notice to prevent abuse.</li>
-              <li><strong>4.2 Paid Subscriptions:</strong>
-                <ul className="list-disc pl-6 mt-2 space-y-2">
-                  <li><strong>Essential Plan ($4.99/mo):</strong> Includes access to managed AI models (e.g., Gemini Flash) subject to a <strong>Fair Use Limit of 800 prompts per month</strong>. This limit is set to prevent automated abuse and ensure service quality for all users.</li>
-                  <li><strong>BYOK Feature:</strong> Subscribers may use their own API keys for unlimited usage (subject to the third-party provider's limits).</li>
-                </ul>
-              </li>
-              <li><strong>4.3 Automatic Renewal:</strong> Subscriptions automatically renew at the end of each billing cycle. You authorize Stripe to charge the payment method on file until you explicitly cancel.</li>
-              <li><strong>4.4 Cancellation & Refund Policy:</strong>
-                <ul className="list-disc pl-6 mt-2 space-y-2">
-                  <li><strong>Cancellation:</strong> You may cancel anytime via your Account Settings. Cancellation stops future billing but allows access until the end of the current cycle.</li>
-                  <li><strong>No Refunds:</strong> Payments are non-refundable. <strong>We do not provide refunds for "unused" months, accidental renewals, or forgetting to cancel.</strong></li>
-                  <li><strong>EU Right of Withdrawal:</strong> If you are an EU consumer, you agree that the Service begins immediately upon subscription, and you thereby acknowledge that you lose your right of withdrawal once the digital service has been fully performed or accessed.</li>
-                </ul>
-              </li>
-            </ul>
-          </section>
-
-          <section className="mb-12">
-            <h2 className="text-2xl font-bold text-slate-900 mb-4">5. Bring Your Own Key (BYOK) & Liability</h2>
+            <h3 className="text-xl font-semibold text-slate-900 mb-3">3.1 Registration</h3>
             <p className="text-slate-700 leading-relaxed mb-4">
-              When using the "Bring Your Own Key" feature (connecting OpenAI, Anthropic, Google or other providers API keys):
+              You must provide a valid email address to create an account. You are responsible for maintaining the confidentiality of your account credentials.
+            </p>
+            
+            <h3 className="text-xl font-semibold text-slate-900 mb-3">3.2 Account Security</h3>
+            <p className="text-slate-700 leading-relaxed">
+              You are responsible for all activities that occur under your account. Notify us immediately of any unauthorized use.
+            </p>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 mb-4">4. Subscription and Payment</h2>
+            <h3 className="text-xl font-semibold text-slate-900 mb-3">4.1 Free Trial</h3>
+            <p className="text-slate-700 leading-relaxed mb-4">
+              New users receive a 48-hour free trial with 30 prompts. No credit card required. Trial terms may change at our discretion.
+            </p>
+            
+            <h3 className="text-xl font-semibold text-slate-900 mb-3">4.2 Paid Subscriptions</h3>
+            <p className="text-slate-700 leading-relaxed mb-4">
+              Paid plans (Basic: $4.99/month, Premium: $14.99/month) grant unlimited prompts for the subscription period. Subscriptions auto-renew monthly unless canceled.
+            </p>
+            
+            <h3 className="text-xl font-semibold text-slate-900 mb-3">4.3 Payment Processing</h3>
+            <p className="text-slate-700 leading-relaxed mb-4">
+              Payments are processed securely through Stripe. By subscribing, you authorize recurring charges to your payment method.
+            </p>
+            
+            <h3 className="text-xl font-semibold text-slate-900 mb-3">4.4 Cancellation and Refunds</h3>
+            <ul className="list-disc pl-6 space-y-2 text-slate-700">
+              <li>You may cancel your subscription at any time from your account settings</li>
+              <li>Cancellation takes effect at the end of the current billing period</li>
+              <li>No refunds for partial months or unused prompts</li>
+              <li>Trial period: No refunds as no payment was made</li>
+            </ul>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 mb-4">5. Bring Your Own Key (BYOK)</h2>
+            <p className="text-slate-700 leading-relaxed mb-4">
+              Users may provide their own API keys for OpenAI, Anthropic, or Google AI:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-slate-700">
-              <li><strong>5.1 Direct Relationship:</strong> Your use of the API key creates a direct contract between you and the AI Provider. WeaveAI acts solely as a user interface.</li>
-              <li><strong>5.2 Financial Responsibility:</strong> You are solely responsible for all API costs, overage charges, or rate limits imposed by the AI Provider.</li>
-              <li><strong>5.3 Liability Shield:</strong> WeaveAI is <strong>not liable</strong> for any content generated, errors, or bans resulting from your use of your own API keys. You agree to indemnify WeaveAI against any claims arising from your use of third-party keys.</li>
+              <li>API keys are stored locally in your browser (not on our servers)</li>
+              <li>You are responsible for all charges incurred with your API keys</li>
+              <li>We are not liable for unauthorized API key usage</li>
+              <li>BYOK users must maintain an active subscription (Basic or Premium)</li>
             </ul>
           </section>
 
           <section className="mb-12">
-            <h2 className="text-2xl font-bold text-slate-900 mb-4">6. Acceptable Use & Fair Usage Policy</h2>
+            <h2 className="text-2xl font-bold text-slate-900 mb-4">6. Acceptable Use</h2>
             <p className="text-slate-700 leading-relaxed mb-4">You agree NOT to:</p>
             <ul className="list-disc pl-6 space-y-2 text-slate-700">
-              <li>Use the Service for illegal activities or to generate harmful, harassing, or infringing content.</li>
-              <li><strong>Automated Scraping:</strong> Use scripts, bots, or automation to bypass the 800-prompt limit or extract data from the Service. <strong>Violation of this triggers immediate account termination without refund.</strong></li>
-              <li>Reverse engineer, decompile, or copy the Extension's source code.</li>
-              <li>Share your account credentials with others to bypass payment.</li>
+              <li>Use the Extension for illegal activities</li>
+              <li>Violate any third-party rights (copyright, trademark, privacy)</li>
+              <li>Reverse engineer, decompile, or modify the Extension</li>
+              <li>Resell or redistribute the Extension</li>
+              <li>Use automated scripts to abuse the service</li>
+              <li>Bypass usage limits or subscription requirements</li>
+              <li>Use the Extension to generate spam or harmful content</li>
             </ul>
           </section>
 
           <section className="mb-12">
-            <h2 className="text-2xl font-bold text-slate-900 mb-4">7. Intellectual Property</h2>
-            <ul className="list-disc pl-6 space-y-2 text-slate-700">
-              <li><strong>7.1 Your Input:</strong> You retain all rights to the queries and context you input into the Extension.</li>
-              <li><strong>7.2 Our IP:</strong> The extension code, interface, "WeaveAI" name, and logo are the exclusive property of WeaveAI.</li>
-              <li><strong>7.3 AI Output:</strong> Assignment of rights in AI-generated output is subject to the terms of the specific AI Provider (e.g., OpenAI or Google). WeaveAI makes no claim of ownership over your generated content.</li>
-            </ul>
-          </section>
-
-          <section className="mb-12">
-            <h2 className="text-2xl font-bold text-slate-900 mb-4">8. Disclaimers and Limitations</h2>
-            <ul className="list-disc pl-6 space-y-2 text-slate-700">
-              <li><strong>8.1 "As Is" Service:</strong> The Extension is provided "AS IS" without warranties of accuracy, uptime, or reliability. We do not guarantee the accuracy of AI-generated summaries.</li>
-              <li><strong>8.2 Third-Party Dependency:</strong> The Service relies on third-party APIs (Google, OpenAI, Stripe). We are not responsible for service interruptions caused by these providers.</li>
-            </ul>
-          </section>
-
-          <section className="mb-12">
-            <h2 className="text-2xl font-bold text-slate-900 mb-4">9. Limitation of Liability</h2>
+            <h2 className="text-2xl font-bold text-slate-900 mb-4">7. Content and Intellectual Property</h2>
+            <h3 className="text-xl font-semibold text-slate-900 mb-3">7.1 Your Content</h3>
+            <p className="text-slate-700 leading-relaxed mb-4">
+              You retain all rights to content you input into the Extension. We do not store or claim ownership of your conversations or analyzed content.
+            </p>
+            
+            <h3 className="text-xl font-semibold text-slate-900 mb-3">7.2 Our Content</h3>
+            <p className="text-slate-700 leading-relaxed mb-4">
+              The Extension, including its code, design, and branding, is owned by WeaveAI and protected by copyright and trademark laws.
+            </p>
+            
+            <h3 className="text-xl font-semibold text-slate-900 mb-3">7.3 Third-Party Content</h3>
             <p className="text-slate-700 leading-relaxed">
-              TO THE MAXIMUM EXTENT PERMITTED BY LAW, WEAVEAI SHALL NOT BE LIABLE FOR INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES. OUR TOTAL LIABILITY FOR ANY CLAIM SHALL NOT EXCEED THE AMOUNT YOU PAID TO US IN THE LAST TWELVE (12) MONTHS.
+              You are responsible for ensuring you have the right to analyze third-party content (web pages, PDFs, etc.). We are not liable for copyright infringement claims.
             </p>
           </section>
 
           <section className="mb-12">
-            <h2 className="text-2xl font-bold text-slate-900 mb-4">10. Termination</h2>
+            <h2 className="text-2xl font-bold text-slate-900 mb-4">8. AI Provider Terms</h2>
+            <p className="text-slate-700 leading-relaxed mb-4">
+              When using the Extension, you are also subject to the terms of service of the AI providers:
+            </p>
+            <ul className="list-disc pl-6 space-y-2 text-slate-700">
+              <li><a href="https://openai.com/policies/terms-of-use" className="text-primary-600 hover:text-primary-700">OpenAI Terms</a></li>
+              <li><a href="https://www.anthropic.com/legal/terms" className="text-primary-600 hover:text-primary-700">Anthropic Terms</a></li>
+              <li><a href="https://policies.google.com/terms" className="text-primary-600 hover:text-primary-700">Google Terms</a></li>
+            </ul>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 mb-4">9. Disclaimers and Limitations</h2>
+            <h3 className="text-xl font-semibold text-slate-900 mb-3">9.1 No Warranty</h3>
+            <p className="text-slate-700 leading-relaxed mb-4">
+              THE EXTENSION IS PROVIDED "AS IS" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED. WE DO NOT GUARANTEE ACCURACY, RELIABILITY, OR AVAILABILITY.
+            </p>
+            
+            <h3 className="text-xl font-semibold text-slate-900 mb-3">9.2 AI Limitations</h3>
+            <p className="text-slate-700 leading-relaxed mb-4">
+              AI models may produce inaccurate, incomplete, or misleading responses. You are responsible for verifying AI outputs before relying on them.
+            </p>
+            
+            <h3 className="text-xl font-semibold text-slate-900 mb-3">9.3 Third-Party Services</h3>
             <p className="text-slate-700 leading-relaxed">
-              We reserve the right to suspend or terminate accounts that violate these Terms, specifically for <strong>payment fraud, API abuse, or generating illegal content.</strong> Terminated accounts are not eligible for refunds.
+              We rely on third-party services (OpenAI, Anthropic, Google, Stripe, Supabase). We are not liable for their downtime, errors, or policy changes.
             </p>
           </section>
 
           <section className="mb-12">
-            <h2 className="text-2xl font-bold text-slate-900 mb-4">11. Governing Law</h2>
+            <h2 className="text-2xl font-bold text-slate-900 mb-4">10. Limitation of Liability</h2>
             <p className="text-slate-700 leading-relaxed">
-              These Terms are governed by the laws of <strong>California, United States</strong>, without regard to conflict of law principles.
+              TO THE MAXIMUM EXTENT PERMITTED BY LAW, WEAVEAI SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES ARISING FROM YOUR USE OF THE EXTENSION. OUR TOTAL LIABILITY SHALL NOT EXCEED THE AMOUNT YOU PAID IN THE LAST 12 MONTHS ($179.88 maximum).
+            </p>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 mb-4">11. Privacy</h2>
+            <p className="text-slate-700 leading-relaxed">
+              Your use of the Extension is also governed by our <a href="/privacy" className="text-primary-600 hover:text-primary-700">Privacy Policy</a>.
+            </p>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 mb-4">12. Termination</h2>
+            <p className="text-slate-700 leading-relaxed mb-4">
+              We reserve the right to suspend or terminate your account at any time for:
+            </p>
+            <ul className="list-disc pl-6 space-y-2 text-slate-700">
+              <li>Violation of these Terms</li>
+              <li>Fraudulent activity</li>
+              <li>Non-payment</li>
+              <li>Abuse of the service</li>
+            </ul>
+            <p className="text-slate-700 leading-relaxed mt-4">
+              Upon termination, you lose access to the Extension and any associated data.
+            </p>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 mb-4">13. Changes to Terms</h2>
+            <p className="text-slate-700 leading-relaxed">
+              We may update these Terms from time to time. Changes will be posted on this page with an updated "Last updated" date. Continued use constitutes acceptance of the updated Terms.
+            </p>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="text-2xl font-bold text-slate-900 mb-4">14. Governing Law</h2>
+            <p className="text-slate-700 leading-relaxed">
+              These Terms are governed by the laws of [Your Jurisdiction], without regard to conflict of law principles.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-slate-900 mb-4">12. Contact Information</h2>
-            <p className="text-slate-700 leading-relaxed mb-4">
-              For legal notices or support:
+            <h2 className="text-2xl font-bold text-slate-900 mb-4">15. Contact</h2>
+            <p className="text-slate-700 leading-relaxed">
+              For questions about these Terms:
             </p>
-            <ul className="list-none space-y-2 text-slate-700">
-              <li><strong>WeaveAI</strong></li>
-              <li><strong>Email:</strong> <a href="mailto:reachweaveai@gmail.com" className="text-primary-600 hover:text-primary-700">reachweaveai@gmail.com</a></li>
-              <li><strong>Support:</strong> <a href="mailto:reachweaveai@gmail.com" className="text-primary-600 hover:text-primary-700">reachweaveai@gmail.com</a></li>
+            <ul className="list-none space-y-2 text-slate-700 mt-4">
+              <li><strong>Email:</strong> <a href="mailto:legal@weaveai.org" className="text-primary-600 hover:text-primary-700">legal@weaveai.org</a></li>
+              <li><strong>Support:</strong> <a href="mailto:support@weaveai.org" className="text-primary-600 hover:text-primary-700">support@weaveai.org</a></li>
+              <li><strong>Website:</strong> <a href="https://weaveai.org" className="text-primary-600 hover:text-primary-700">weaveai.org</a></li>
             </ul>
           </section>
         </div>
@@ -126,3 +197,4 @@ export default function TermsPage() {
     </div>
   );
 }
+

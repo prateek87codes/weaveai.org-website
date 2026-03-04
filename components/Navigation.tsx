@@ -49,7 +49,7 @@ export default function Navigation() {
           {/* CTA Button */}
           <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center">
             <Link
-              href="https://chrome.google.com/webstore"
+              href="https://chromewebstore.google.com/detail/weaveai-chat-with-any-pag/afbpcodjinckkhcoohninegiofckpege"
               target="_blank"
               className="rounded-lg bg-primary-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-500 transition-all hover:scale-105 flex items-center"
             >
@@ -90,7 +90,7 @@ export default function Navigation() {
               ))}
               <div className="border-t border-slate-200 pt-4">
                 <Link
-                  href="https://chrome.google.com/webstore"
+                  href="https://chromewebstore.google.com/detail/weaveai-chat-with-any-pag/afbpcodjinckkhcoohninegiofckpege"
                   target="_blank"
                   className="block rounded-lg bg-primary-600 px-3 py-2 text-base font-semibold text-white text-center"
                   onClick={() => setMobileMenuOpen(false)}

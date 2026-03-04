@@ -90,7 +90,7 @@ export default function Footer() {
         </div>
         <div className="mt-16 border-t border-slate-700 pt-8 sm:mt-20 lg:mt-24">
           <p className="text-xs leading-5 text-slate-400">
-            &copy; 2026 WeaveAI. All rights reserved.
+            &copy; 2025 WeaveAI. All rights reserved.
           </p>
         </div>
       </div>

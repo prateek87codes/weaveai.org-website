@@ -36,8 +36,8 @@ export default function Hero() {
           
           {/* CTA buttons */}
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up">
-            <Link
-              href="https://chrome.google.com/webstore"
+          <Link
+              href="https://chromewebstore.google.com/detail/weaveai-chat-with-any-pag/afbpcodjinckkhcoohninegiofckpege"
               target="_blank"
               className="group rounded-lg bg-primary-600 px-8 py-4 text-lg font-semibold text-white shadow-lg hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 transition-all hover:scale-105 flex items-center gap-2"
             >
@@ -72,16 +72,25 @@ export default function Hero() {
                 weaveai.org
               </div>
             </div>
-            <div className="relative w-full bg-slate-900">
-              <video
-                className="w-full h-auto"
-                controls
-                preload="metadata"
-                poster="/screenshot-opening.jpg"
-              >
-                <source src="/weaveai-demo.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+            <div className="bg-gradient-to-br from-primary-50 to-slate-50 p-8 min-h-[400px] flex items-center justify-center">
+              <div className="text-center">
+                <div className="text-8xl mb-4">💬</div>
+                <p className="text-slate-600 text-lg">Demo video/screenshot goes here</p>
+                <p className="text-slate-500 text-sm mt-2">Add your extension demo screenshot to /public/demo.png</p>
+              </div>
+            </div>
+          </div>
+          
+          {/* Floating feature badges */}
+          <div className="hidden lg:block">
+            <div className="absolute -left-8 top-1/4 bg-white rounded-lg shadow-lg p-4 animate-pulse-slow">
+              <p className="text-sm font-semibold text-slate-900">✅ 500-page PDFs</p>
+            </div>
+            <div className="absolute -right-8 top-1/3 bg-white rounded-lg shadow-lg p-4 animate-pulse-slow" style={{animationDelay: '1s'}}>
+              <p className="text-sm font-semibold text-slate-900">🎥 YouTube transcripts</p>
+            </div>
+            <div className="absolute -left-8 bottom-1/4 bg-white rounded-lg shadow-lg p-4 animate-pulse-slow" style={{animationDelay: '2s'}}>
+              <p className="text-sm font-semibold text-slate-900">🔗 Multi-tab intelligence</p>
             </div>
           </div>
         </div>

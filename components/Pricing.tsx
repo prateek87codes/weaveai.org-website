@@ -17,7 +17,7 @@ export default function Pricing() {
         "Gemini Flash models included"
       ],
       cta: "Start Free Trial",
-      href: "https://chrome.google.com/webstore",
+      href: "https://chromewebstore.google.com/detail/weaveai-chat-with-any-pag/afbpcodjinckkhcoohninegiofckpege",
       highlighted: false
     },
     {
@@ -34,7 +34,7 @@ export default function Pricing() {
         "Cancel anytime"
       ],
       cta: "Get Started",
-      href: "https://chrome.google.com/webstore",
+      href: "https://chromewebstore.google.com/detail/weaveai-chat-with-any-pag/afbpcodjinckkhcoohninegiofckpege",
       highlighted: true
     },
     {

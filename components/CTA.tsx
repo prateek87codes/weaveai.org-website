@@ -14,7 +14,7 @@ export default function CTA() {
         
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link
-            href="https://chrome.google.com/webstore"
+            href="https://chromewebstore.google.com/detail/weaveai-chat-with-any-pag/afbpcodjinckkhcoohninegiofckpege"
             target="_blank"
             className="group rounded-lg bg-white px-8 py-4 text-lg font-semibold text-primary-600 shadow-lg hover:bg-primary-50 transition-all hover:scale-105 flex items-center gap-2"
           >

@@ -6,7 +6,6 @@ import Comparison from "@/components/Comparison";
 import Pricing from "@/components/Pricing";
 import FAQ from "@/components/FAQ";
 import CTA from "@/components/CTA";
-import ElevenLabsWidget from "@/components/ElevenLabsWidget";
 
 export default function Home() {
   return (
@@ -19,7 +18,6 @@ export default function Home() {
       <Pricing />
       <FAQ />
       <CTA />
-      <ElevenLabsWidget />
     </>
   );
 }

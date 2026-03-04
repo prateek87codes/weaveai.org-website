@@ -84,7 +84,7 @@ export default function Comparison() {
 
         <div className="mt-12 text-center">
           <a
-            href="https://chrome.google.com/webstore"
+            href="https://chromewebstore.google.com/detail/weaveai-chat-with-any-pag/afbpcodjinckkhcoohninegiofckpege"
             target="_blank"
             className="inline-flex items-center gap-2 rounded-lg bg-primary-600 px-8 py-4 text-lg font-semibold text-white shadow-lg hover:bg-primary-500 transition-all hover:scale-105"
           >
