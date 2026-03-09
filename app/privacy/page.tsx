@@ -163,7 +163,7 @@ export default function PrivacyPage() {
               <li><strong>Withdraw consent:</strong> Revoke Google OAuth access at any time via your <a href="https://myaccount.google.com/permissions" className="text-primary-600 hover:text-primary-700">Google Account permissions page</a>.</li>
             </ul>
             <p className="text-slate-700 leading-relaxed mt-4">
-              To exercise these rights, contact us at <a href="mailto:privacy@weaveai.org" className="text-primary-600 hover:text-primary-700">privacy@weaveai.org</a>. We will respond within 30 days.
+              To exercise these rights, contact us at <a href="mailto:reachweaveai@gmail.com" className="text-primary-600 hover:text-primary-700">reachweaveai@gmail.com</a>. We will respond within 30 days.
             </p>
           </section>
 
@@ -187,8 +187,7 @@ export default function PrivacyPage() {
               For privacy-related questions, data requests, or concerns:
             </p>
             <ul className="list-none space-y-2 text-slate-700 mt-4">
-              <li><strong>Privacy email:</strong> <a href="mailto:privacy@weaveai.org" className="text-primary-600 hover:text-primary-700">privacy@weaveai.org</a></li>
-              <li><strong>Support:</strong> <a href="mailto:support@weaveai.org" className="text-primary-600 hover:text-primary-700">support@weaveai.org</a></li>
+              <li><strong>Email:</strong> <a href="mailto:reachweaveai@gmail.com" className="text-primary-600 hover:text-primary-700">reachweaveai@gmail.com</a></li>
               <li><strong>Website:</strong> <a href="https://weaveai.org" className="text-primary-600 hover:text-primary-700">weaveai.org</a></li>
               <li><strong>Business address:</strong> WeaveAI LLC, 2108 N St STE N, Sacramento, CA 95816, US</li>
             </ul>
